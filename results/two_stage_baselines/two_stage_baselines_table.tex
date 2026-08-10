@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering
+\caption{Two-stage baselines on the matched synthetic benchmark. Values are mean (standard deviation) over independently generated datasets.}
+\label{tab:two_stage_baselines}
+\begin{tabular}{clcccc}
+\toprule
+$N$ & Method & ARI & NMI & Dim. used & Feature F1 \\
+\midrule
+200 & LaplacianScore+diag-GMM & 0.993 (0.010) & 0.990 (0.016) & 10.0 (0.0) & 1.000 (0.000) \
+200 & PCA+diag-GMM & 0.844 (0.272) & 0.857 (0.227) & 50.0 (0.0) & -- \
+\addlinespace
+1000 & LaplacianScore+diag-GMM & 0.998 (0.003) & 0.995 (0.005) & 10.0 (0.0) & 1.000 (0.000) \
+1000 & PCA+diag-GMM & 0.996 (0.004) & 0.992 (0.008) & 50.0 (0.0) & -- \
+\addlinespace
+\bottomrule
+\end{tabular}
+\end{table}

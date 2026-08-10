@@ -1,0 +1,14 @@
+feature,q_phi,active
+flavanoids,0.9525757,True
+proline,0.93043464,True
+od280/od315_of_diluted_wines,0.9250304,True
+color_intensity,0.9154774,True
+hue,0.8594312,True
+total_phenols,0.8508054,True
+alcohol,0.84590954,True
+proanthocyanins,0.68101937,True
+malic_acid,0.6088664,True
+nonflavanoid_phenols,0.5967631,True
+alcalinity_of_ash,0.4989382,False
+magnesium,0.37677807,False
+ash,0.08956855,False
