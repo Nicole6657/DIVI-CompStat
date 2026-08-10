@@ -1,0 +1,1 @@
+setting,variant,seed,n,d,d_info,k_true,status,error,ARI,NMI,runtime_sec,final_K,correct_K,over_split,under_split,split_proposals,accepted_splits,rejected_splits,active_dims,feature_f1_thresh,feature_f1_topd

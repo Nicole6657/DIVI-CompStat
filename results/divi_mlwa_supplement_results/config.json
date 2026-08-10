@@ -1,0 +1,53 @@
+{
+  "divi_path": "/content/DIVI_HAR.py",
+  "output_dir": "/content/drive/MyDrive/divi_mlwa_supplement_results",
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "quick": false,
+  "methods": [
+    "divi_info",
+    "kmeans",
+    "gmm",
+    "pca_kmeans",
+    "pca_gmm"
+  ],
+  "d_info": 10,
+  "noise_sd": 3.0,
+  "high_n": 600,
+  "high_delta": 2.0,
+  "high_d_values": [
+    100,
+    500,
+    1000,
+    2000
+  ],
+  "weak_n": 200,
+  "weak_d": 500,
+  "weak_delta_values": [
+    1.0,
+    1.5,
+    2.0
+  ],
+  "pca_q": 50,
+  "gmm_reg_covar": 1e-06,
+  "divi_epochs": 300,
+  "divi_lr": 0.05,
+  "divi_split_interval": 60,
+  "divi_split_threshold": 22.0,
+  "divi_beta_mult": 1.0,
+  "divi_cap_at_true_k": true,
+  "feature_threshold": 0.5,
+  "divi_verbose": false,
+  "num_threads": 1,
+  "print_errors": false
+}

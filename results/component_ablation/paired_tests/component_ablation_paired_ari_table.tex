@@ -1,0 +1,20 @@
+\begin{table*}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\caption{Primary paired ARI comparisons for the component ablation. Differences are Full DIVI minus the ablated variant. Confidence intervals are percentile-bootstrap 95\% intervals based on paired resampling. Wilcoxon signed-rank $p$-values are Holm-adjusted across the six pre-specified comparisons.}
+\label{tab:component_ablation_paired}
+\begin{tabular}{llccccccc}
+\toprule
+Setting & Comparator & $n$ & Full & Comparator & $\Delta$ ARI (95\% CI) & $d_z$ & $r_{\mathrm{rb}}$ & Holm $p$ \\
+\midrule
+Matched & No Step A & 20 & 0.859 & 0.554 & 0.305 ([0.242, 0.367]) & 2.077 & 1.000 & $<0.001$ \\
+ & No gating & 20 & 0.859 & 0.489 & 0.369 ([0.293, 0.434]) & 2.221 & 0.971 & $<0.001$ \\
+ & Unsafe split & 20 & 0.859 & 0.634 & 0.225 ([0.148, 0.291]) & 1.340 & 0.924 & $<0.001$ \\
+\addlinespace
+Correlated noise & No Step A & 20 & 0.785 & 0.530 & 0.255 ([0.197, 0.313]) & 1.886 & 1.000 & $<0.001$ \\
+ & No gating & 20 & 0.785 & 0.489 & 0.296 ([0.218, 0.369]) & 1.683 & 0.971 & $<0.001$ \\
+ & Unsafe split & 20 & 0.785 & 0.652 & 0.133 ([0.053, 0.207]) & 0.741 & 0.686 & 0.006 \\
+\bottomrule
+\end{tabular}
+\end{table*}

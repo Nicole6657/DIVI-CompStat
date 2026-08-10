@@ -1,0 +1,2 @@
+dataset,method,seed,beta_mult,tau_mult,use_prior,max_components,rough_k,Final K,Label K,ARI,NMI,Active genes,Mean q_phi,Max q_phi,Min q_phi,Time (s)
+PBMC-SCT,DIVI-Info,1,1.0,1.0,1,8,8,8,8,0.7903604501150269,0.704721040512998,1594,0.6217877268791199,0.9525471925735474,0.04923398792743683,1094.0405092749997

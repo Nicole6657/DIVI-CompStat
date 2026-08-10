@@ -1,0 +1,34 @@
+\begin{table*}[t]
+\centering
+\footnotesize
+\caption{Selected paired comparisons between DIVI-Info and competing methods. Positive paired differences favor DIVI-Info.}
+\label{tab:paired_tests_main}
+\begin{tabular}{lllrrrrrr}
+\toprule
+Experiment & Setting & Comparator & Metric & $n$ & $\Delta$ & 95\% CI & $d_z$ & $r_{\mathrm{rb}}$ & Holm $p$ \\
+\midrule
+cluster\_specific\_relevance & cluster\_specific\_support & K-means & ARI & 20 & 0.010 & [0.004, 0.016] & 0.785 & 0.724 & 0.009 \\
+cluster\_specific\_relevance & cluster\_specific\_support & diag-GMM & ARI & 20 & 0.004 & [-0.001, 0.009] & 0.370 & 0.529 & 0.125 \\
+cluster\_specific\_relevance & global\_support & K-means & ARI & 20 & 0.012 & [0.006, 0.018] & 0.807 & 0.762 & 0.007 \\
+cluster\_specific\_relevance & global\_support & diag-GMM & ARI & 20 & 0.003 & [-0.001, 0.007] & 0.370 & 0.421 & 0.125 \\
+misspecification & correlated\_noise\_N1000 & K-means & ARI & 20 & 0.331 & [0.219, 0.439] & 1.283 & 0.905 & $<.001$ \\
+misspecification & correlated\_noise\_N1000 & diag-GMM & ARI & 20 & 0.215 & [0.102, 0.324] & 0.821 & 0.886 & $<.001$ \\
+misspecification & correlated\_noise\_N200 & K-means & ARI & 20 & 0.136 & [0.074, 0.201] & 0.913 & 0.800 & 0.004 \\
+misspecification & correlated\_noise\_N200 & diag-GMM & ARI & 20 & 0.113 & [0.047, 0.180] & 0.724 & 0.733 & 0.011 \\
+misspecification & heavy\_tail\_signal\_N1000 & K-means & ARI & 20 & -0.022 & [-0.070, 0.003] & -0.207 & 0.274 & 0.295 \\
+misspecification & heavy\_tail\_signal\_N1000 & diag-GMM & ARI & 20 & -0.006 & [-0.075, 0.060] & -0.043 & -0.634 & 0.043 \\
+misspecification & heavy\_tail\_signal\_N200 & K-means & ARI & 20 & 0.076 & [0.060, 0.094] & 1.877 & 1.000 & $<.001$ \\
+misspecification & heavy\_tail\_signal\_N200 & diag-GMM & ARI & 20 & 0.136 & [0.040, 0.242] & 0.573 & 0.769 & 0.043 \\
+weak\_signal & Delta\_1.0 & LaplacianScore+diag-GMM & ARI & 10 & -0.251 & [-0.288, -0.213] & -3.877 & -1.000 & 0.029 \\
+weak\_signal & Delta\_1.0 & diag-GMM & ARI & 10 & 0.236 & [0.154, 0.307] & 1.797 & 0.964 & 0.029 \\
+weak\_signal & Delta\_1.5 & LaplacianScore+diag-GMM & ARI & 10 & -0.445 & [-0.542, -0.335] & -2.543 & -1.000 & 0.029 \\
+weak\_signal & Delta\_1.5 & diag-GMM & ARI & 10 & 0.253 & [0.102, 0.419] & 0.932 & 0.782 & 0.055 \\
+weak\_signal & Delta\_2.0 & LaplacianScore+diag-GMM & ARI & 10 & -0.002 & [-0.006, 0.003] & -0.180 & -0.400 & 0.625 \\
+weak\_signal & Delta\_2.0 & diag-GMM & ARI & 10 & 0.592 & [0.575, 0.613] & 18.676 & 1.000 & 0.029 \\
+\bottomrule
+\end{tabular}
+\begin{flushleft}
+\footnotesize
+Notes: $\Delta$ is the paired mean difference (DIVI-Info minus comparator). Positive values of $\Delta$, $d_z$, and $r_{\mathrm{rb}}$ favor DIVI-Info. Confidence intervals are percentile bootstrap intervals based on 20,000 paired resamples. Two-sided Wilcoxon signed-rank $p$-values are adjusted by the Holm procedure within each experiment and metric.
+\end{flushleft}
+\end{table*}

@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\caption{Global-gate stress test under common and cluster-specific relevance structures. Values are mean (standard deviation) over independently generated datasets.}
+\label{tab:cluster_specific_relevance}
+\begin{tabular}{llccccc}
+\toprule
+Design & Method & ARI & NMI & Feature F1 & Top-$|S|$ F1 & Active dims \\
+\midrule
+global support & DIVI-Info & 0.971 (0.009) & 0.950 (0.015) & 0.870 (0.097) & 0.977 (0.079) & 19.4 (3.2) \\
+ & Diag-GMM & 0.968 (0.010) & 0.945 (0.017) & -- & -- & -- \\
+ & K-means & 0.960 (0.017) & 0.932 (0.026) & -- & -- & -- \\
+\addlinespace
+cluster specific & DIVI-Info & 0.975 (0.013) & 0.957 (0.020) & 0.864 (0.088) & 0.990 (0.045) & 19.9 (3.6) \\
+ & Diag-GMM & 0.971 (0.010) & 0.950 (0.017) & -- & -- & -- \\
+ & K-means & 0.965 (0.011) & 0.940 (0.018) & -- & -- & -- \\
+\addlinespace
+\bottomrule
+\end{tabular}
+\end{table}

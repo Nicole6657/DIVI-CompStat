@@ -1,0 +1,30 @@
+\begin{table*}[t]
+\centering
+\footnotesize
+\caption{Pre-specified paired comparisons for the primary synthetic experiments. Differences are computed as DIVI-Info minus the comparator.}
+\label{tab:paired_primary}
+\begin{tabular}{lllrrrrrr}
+\toprule
+Experiment & Setting & Comparator & $n$ & $\Delta$ ARI & 95\% CI & $d_z$ & $r_{\mathrm{rb}}$ & Holm $p$ \\
+\midrule
+misspecification & correlated\_noise\_N1000 & K-means & 20 & 0.331 & [0.219, 0.439] & 1.283 & 0.905 & $<.001$ \\
+misspecification & correlated\_noise\_N1000 & diag-GMM & 20 & 0.215 & [0.102, 0.324] & 0.821 & 0.886 & $<.001$ \\
+misspecification & correlated\_noise\_N200 & K-means & 20 & 0.136 & [0.074, 0.201] & 0.913 & 0.800 & 0.004 \\
+misspecification & correlated\_noise\_N200 & diag-GMM & 20 & 0.113 & [0.047, 0.180] & 0.724 & 0.733 & 0.011 \\
+misspecification & heavy\_tail\_signal\_N1000 & K-means & 20 & -0.022 & [-0.070, 0.003] & -0.207 & 0.274 & 0.295 \\
+misspecification & heavy\_tail\_signal\_N1000 & diag-GMM & 20 & -0.006 & [-0.075, 0.060] & -0.043 & -0.634 & 0.043 \\
+misspecification & heavy\_tail\_signal\_N200 & K-means & 20 & 0.076 & [0.060, 0.094] & 1.877 & 1.000 & $<.001$ \\
+misspecification & heavy\_tail\_signal\_N200 & diag-GMM & 20 & 0.136 & [0.040, 0.242] & 0.573 & 0.769 & 0.043 \\
+weak\_signal & Delta\_1.0 & LaplacianScore+diag-GMM & 10 & -0.251 & [-0.288, -0.213] & -3.877 & -1.000 & 0.012 \\
+weak\_signal & Delta\_1.0 & diag-GMM & 10 & 0.236 & [0.154, 0.307] & 1.797 & 0.964 & 0.012 \\
+weak\_signal & Delta\_1.5 & LaplacianScore+diag-GMM & 10 & -0.445 & [-0.542, -0.335] & -2.543 & -1.000 & 0.012 \\
+weak\_signal & Delta\_1.5 & diag-GMM & 10 & 0.253 & [0.102, 0.419] & 0.932 & 0.782 & 0.055 \\
+weak\_signal & Delta\_2.0 & LaplacianScore+diag-GMM & 10 & -0.002 & [-0.006, 0.003] & -0.180 & -0.400 & 0.625 \\
+weak\_signal & Delta\_2.0 & diag-GMM & 10 & 0.592 & [0.575, 0.613] & 18.676 & 1.000 & 0.012 \\
+\bottomrule
+\end{tabular}
+\begin{flushleft}
+\footnotesize
+Notes: Positive differences favor DIVI-Info. Confidence intervals are based on paired bootstrap resampling. Two-sided Wilcoxon signed-rank tests are adjusted by the Holm procedure separately within the weak-signal and misspecification experiment families. $d_z$ denotes paired Cohen's effect size and $r_{\mathrm{rb}}$ denotes the matched-pairs rank-biserial correlation.
+\end{flushleft}
+\end{table*}

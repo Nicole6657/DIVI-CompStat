@@ -1,0 +1,8 @@
+artifact_type,path
+master_runs,outputs_revision/aggregated/master_runs.csv
+runtime_summary,outputs_revision/aggregated/runtime_summary_long.csv
+sensitivity_summary,outputs_revision/aggregated/sensitivity_summary_long.csv
+paper_tables,outputs_revision/aggregated/paper_tables
+latex,outputs_revision/aggregated/latex
+figure_csv,outputs_revision/aggregated/figure_csv
+figures,outputs_revision/aggregated/figures
