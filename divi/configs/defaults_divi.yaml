@@ -1,0 +1,10 @@
+prior_mode: 1
+beta_mult: 1.0
+split_interval: 80
+max_epochs: 300
+lr: 0.01
+temp_start: 1.0
+temp_end: 0.1
+noise_scale: 3.0
+D_signal: 10
+spkm_l1_bound: 4.0
